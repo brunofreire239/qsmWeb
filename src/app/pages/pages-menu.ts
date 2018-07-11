@@ -57,11 +57,11 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-compose',
     children: [
       {
-        title: 'Form Inputs',
+        title: 'Cadastro Usuário',
         link: '/pages/forms/inputs',
       },
       {
-        title: 'Form Layouts',
+        title: 'Cadastro Funcionário',
         link: '/pages/forms/layouts',
       },
     ],

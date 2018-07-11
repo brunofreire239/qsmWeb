@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { LocalDataSource } from 'ng2-smart-table';
 
 import { SmartTableService } from '../../../@core/data/smart-table.service';
+import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({
   selector: 'ngx-smart-table',
@@ -13,17 +14,25 @@ import { SmartTableService } from '../../../@core/data/smart-table.service';
   `],
 })
 export class SmartTableComponent {
+  public input: string = '<input type="checkbox">';
 
   settings = {
+    actions: {
+      add: true,
+      edit: true,
+      delete: false,
+    },
     add: {
       addButtonContent: '<i class="nb-plus"></i>',
       createButtonContent: '<i class="nb-checkmark"></i>',
       cancelButtonContent: '<i class="nb-close"></i>',
+      confirmCreate: true,
     },
     edit: {
       editButtonContent: '<i class="nb-edit"></i>',
       saveButtonContent: '<i class="nb-checkmark"></i>',
       cancelButtonContent: '<i class="nb-close"></i>',
+      confirmSave : true,
     },
     delete: {
       deleteButtonContent: '<i class="nb-trash"></i>',
@@ -33,10 +42,13 @@ export class SmartTableComponent {
       id: {
         title: 'ID',
         type: 'number',
+        editable:false,
       },
       firstName: {
-        title: 'First Name',
-        type: 'string',
+        title: 'Check Box',
+        type: 'html',
+        valuePrepareFunction: (value) => { return this._sanitizer.bypassSecurityTrustHtml(this.input); },
+        filter: false
       },
       lastName: {
         title: 'Last Name',
@@ -54,12 +66,16 @@ export class SmartTableComponent {
         title: 'Age',
         type: 'number',
       },
+      age2: {
+        title: 'Age2',
+        type: 'checkbox',
+      },
     },
   };
 
   source: LocalDataSource = new LocalDataSource();
 
-  constructor(private service: SmartTableService) {
+  constructor(private service: SmartTableService, private _sanitizer: DomSanitizer) {
     const data = this.service.getData();
     this.source.load(data);
   }
@@ -70,5 +86,14 @@ export class SmartTableComponent {
     } else {
       event.confirm.reject();
     }
+  }
+  teste(event):void{
+    console.log("event")
+    console.log(event)
+  }
+
+  testeEdit(event):void{
+    console.log("event@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@")
+    console.log(event)
   }
 }
