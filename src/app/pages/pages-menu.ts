@@ -138,7 +138,7 @@ export const MENU_ITEMS: NbMenuItem[] = [
     icon: 'nb-tables',
     children: [
       {
-        title: 'Smart Table',
+        title: 'Cadastro',
         link: '/pages/tables/smart-table',
       },
     ],

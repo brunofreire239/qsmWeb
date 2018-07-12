@@ -4,7 +4,12 @@
   </nb-card-header>
 
   <nb-card-body>
-    <ng2-smart-table [settings]="settings" [source]="source" (editConfirm)="testeEdit($event)" (createConfirm)="teste($event)">
+    <ng2-smart-table [settings]="settings" [source]="motoqueiros" (editConfirm)="salvarMotoqueiro($event)" (createConfirm)="salvarMotoqueiro($event)" (deleteConfirm)="onDeleteConfirm($event)">
     </ng2-smart-table>
   </nb-card-body>
+
+  <nb-card-body>
+      <ng2-smart-table [settings]="settings" [source]="operadoras" (editConfirm)="salvarOperadora($event)" (createConfirm)="salvarOperadora($event)" (deleteConfirm)="onDeleteConfirm($event)">
+      </ng2-smart-table>
+    </nb-card-body>
 </nb-card>

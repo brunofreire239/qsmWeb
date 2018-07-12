@@ -9,4 +9,9 @@ export class FormInputsComponent {
 
   starRate = 2;
   heartRate = 4;
+
+
+  teste(){
+    console.log("AAAAAAAAAAAAAAA")
+  }
 }
