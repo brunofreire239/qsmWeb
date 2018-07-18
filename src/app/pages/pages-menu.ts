@@ -13,45 +13,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
   },
 
   
-  // {
-  //   title: 'UI Features',
-  //   icon: 'nb-keypad',
-  //   link: '/pages/ui-features',
-  //   children: [
-  //     {
-  //       title: 'Buttons',
-  //       link: '/pages/ui-features/buttons',
-  //     },
-  //     {
-  //       title: 'Grid',
-  //       link: '/pages/ui-features/grid',
-  //     },
-  //     {
-  //       title: 'Icons',
-  //       link: '/pages/ui-features/icons',
-  //     },
-  //     {
-  //       title: 'Modals',
-  //       link: '/pages/ui-features/modals',
-  //     },
-  //     {
-  //       title: 'Popovers',
-  //       link: '/pages/ui-features/popovers',
-  //     },
-  //     {
-  //       title: 'Typography',
-  //       link: '/pages/ui-features/typography',
-  //     },
-  //     {
-  //       title: 'Animated Searches',
-  //       link: '/pages/ui-features/search-fields',
-  //     },
-  //     {
-  //       title: 'Tabs',
-  //       link: '/pages/ui-features/tabs',
-  //     },
-  //   ],
-  // },
   {
     title: 'Cadastros',
     icon: 'nb-compose',
@@ -66,41 +27,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
-  // {
-  //   title: 'Components',
-  //   icon: 'nb-gear',
-  //   children: [
-  //     {
-  //       title: 'Tree',
-  //       link: '/pages/components/tree',
-  //     }, {
-  //       title: 'Notifications',
-  //       link: '/pages/components/notifications',
-  //     },
-  //   ],
-  // },
-  // {
-  //   title: 'Maps',
-  //   icon: 'nb-location',
-  //   children: [
-  //     {
-  //       title: 'Google Maps',
-  //       link: '/pages/maps/gmaps',
-  //     },
-  //     {
-  //       title: 'Leaflet Maps',
-  //       link: '/pages/maps/leaflet',
-  //     },
-  //     {
-  //       title: 'Bubble Maps',
-  //       link: '/pages/maps/bubble',
-  //     },
-  //     {
-  //       title: 'Search Maps',
-  //       link: '/pages/maps/searchmap',
-  //     },
-  //   ],
-  // },
   {
     title: 'Fichas',
     icon: 'nb-bar-chart',
@@ -119,20 +45,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
-  // {
-  //   title: 'Editors',
-  //   icon: 'nb-title',
-  //   children: [
-  //     {
-  //       title: 'TinyMCE',
-  //       link: '/pages/editors/tinymce',
-  //     },
-  //     {
-  //       title: 'CKEditor',
-  //       link: '/pages/editors/ckeditor',
-  //     },
-  //   ],
-  // },
   {
     title: 'Funcionarios',
     icon: 'nb-tables',
@@ -143,16 +55,6 @@ export const MENU_ITEMS: NbMenuItem[] = [
       },
     ],
   },
-  // {
-  //   title: 'Miscellaneous',
-  //   icon: 'nb-shuffle',
-  //   children: [
-  //     {
-  //       title: '404',
-  //       link: '/pages/miscellaneous/404',
-  //     },
-  //   ],
-  // },
   // {
   //   title: 'Auth',
   //   icon: 'nb-locked',
